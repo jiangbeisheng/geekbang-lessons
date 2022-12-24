@@ -30,13 +30,13 @@ import java.util.Map;
  * 1. 通过名称的方式来查找
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
- * @since
+ * @since 2022年12月23日10:39:21
  */
 public class DependencyLookupDemo {
 
     public static void main(String[] args) {
         // 配置 XML 配置文件
-        // 启动 Spring 应用上下文
+        // 启动 Spring 应用上下文 META-INF/dependency-lookup-context.xml
         BeanFactory beanFactory = new ClassPathXmlApplicationContext("classpath:/META-INF/dependency-lookup-context.xml");
         // 按照类型查找
         lookupByType(beanFactory);

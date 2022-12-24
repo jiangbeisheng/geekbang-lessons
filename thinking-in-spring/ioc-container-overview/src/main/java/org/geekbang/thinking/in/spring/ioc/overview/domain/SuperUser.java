@@ -22,7 +22,7 @@ import org.geekbang.thinking.in.spring.ioc.overview.annotation.Super;
  * 超级用户
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
- * @since
+ * @since 2022年12月23日13:37:38
  */
 @Super
 public class SuperUser extends User {

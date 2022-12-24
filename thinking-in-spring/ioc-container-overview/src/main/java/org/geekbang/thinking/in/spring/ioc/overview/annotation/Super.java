@@ -25,7 +25,7 @@ import java.lang.annotation.Target;
  * 超级
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
- * @since
+ * @since 2022年12月23日13:44:20
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)

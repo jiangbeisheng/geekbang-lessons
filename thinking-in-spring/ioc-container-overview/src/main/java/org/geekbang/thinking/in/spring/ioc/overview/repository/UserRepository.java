@@ -27,7 +27,7 @@ import java.util.Collection;
  * 用户信息仓库
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
- * @since
+ * @since 2022年12月23日15:39:11
  */
 public class UserRepository {
 

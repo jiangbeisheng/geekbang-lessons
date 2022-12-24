@@ -32,7 +32,7 @@ import java.util.Properties;
  * 用户类
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
- * @since
+ * @since 2022年12月23日10:41:14
  */
 public class User implements BeanNameAware {
 
