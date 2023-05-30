@@ -28,7 +28,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * 类型安全 依赖查找示例
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
- * @since
+ * @since 2023年01月17日16:44:03
  */
 public class TypeSafetyDependencyLookupDemo {
 
@@ -67,13 +67,13 @@ public class TypeSafetyDependencyLookupDemo {
 
     private static void displayObjectProviderIfAvailable(AnnotationConfigApplicationContext applicationContext) {
         ObjectProvider<User> userObjectProvider = applicationContext.getBeanProvider(User.class);
-        printBeansException("displayObjectProviderIfAvailable", () -> userObjectProvider.getIfAvailable());
+        printBeansException("displayObjectProviderIfAvailable", userObjectProvider::getIfAvailable);
     }
 
     private static void displayObjectFactoryGetObject(AnnotationConfigApplicationContext applicationContext) {
         // ObjectProvider is ObjectFactory
         ObjectFactory<User> userObjectFactory = applicationContext.getBeanProvider(User.class);
-        printBeansException("displayObjectFactoryGetObject", () -> userObjectFactory.getObject());
+        printBeansException("displayObjectFactoryGetObject", userObjectFactory::getObject);
     }
 
     public static void displayBeanFactoryGetBean(BeanFactory beanFactory) {

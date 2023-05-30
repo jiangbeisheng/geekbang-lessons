@@ -21,6 +21,7 @@ import org.geektimes.projects.user.domain.User;
 import java.beans.BeanInfo;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
+import java.beans.PropertyEditorSupport;
 
 /**
  * TODO Comment
@@ -31,7 +32,9 @@ import java.beans.PropertyDescriptor;
 public class IntrospectorDemo {
 
     public static void main(String[] args) throws Exception {
+        /*通过Java Beans 自省的方式进行操作*/
         BeanInfo beanInfo = Introspector.getBeanInfo(User.class);
+        PropertyEditorSupport
         for (PropertyDescriptor propertyDescriptor : beanInfo.getPropertyDescriptors()) {
             System.out.println(propertyDescriptor.getReadMethod());
         }

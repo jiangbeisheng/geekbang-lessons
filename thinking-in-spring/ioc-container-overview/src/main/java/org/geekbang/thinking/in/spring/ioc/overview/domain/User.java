@@ -22,8 +22,6 @@ import org.springframework.core.io.Resource;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
@@ -118,7 +116,7 @@ public class User implements BeanNameAware {
     public static User createUser() {
         User user = new User();
         user.setId(1L);
-        user.setName("小马哥");
+        user.setName("马化腾");
         return user;
     }
 

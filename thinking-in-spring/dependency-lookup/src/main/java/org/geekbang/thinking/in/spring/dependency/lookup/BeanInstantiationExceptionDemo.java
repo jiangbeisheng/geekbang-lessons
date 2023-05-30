@@ -17,7 +17,6 @@
 package org.geekbang.thinking.in.spring.dependency.lookup;
 
 import org.springframework.beans.BeanInstantiationException;
-import org.springframework.beans.factory.NoUniqueBeanDefinitionException;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -25,7 +24,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * {@link BeanInstantiationException} 实例
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
- * @since
+ * @since 2023-01-18 15:46:36
  */
 public class BeanInstantiationExceptionDemo {
 

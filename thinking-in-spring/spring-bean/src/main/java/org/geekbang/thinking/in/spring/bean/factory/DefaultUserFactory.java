@@ -26,7 +26,7 @@ import javax.annotation.PreDestroy;
  * 默认 {@link UserFactory} 实现
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
- * @since
+ * @since 2023年01月15日11:57:34
  */
 public class DefaultUserFactory implements UserFactory, InitializingBean, DisposableBean {
 

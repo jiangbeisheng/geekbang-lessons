@@ -22,11 +22,15 @@ import org.geekbang.thinking.in.spring.ioc.overview.domain.User;
  * {@link User} 工厂类
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
- * @since
+ * @since 2023年01月16日15:15:23
  */
 public interface UserFactory {
 
     default User createUser() {
         return User.createUser();
     }
+
+    void initUserFactory();
+
+    void doDestroy();
 }

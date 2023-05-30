@@ -26,7 +26,7 @@ import org.springframework.beans.factory.support.GenericBeanDefinition;
  * {@link org.springframework.beans.factory.config.BeanDefinition} 构建示例
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
- * @since
+ * @since 2023年03月19日20:48:53
  */
 public class BeanDefinitionCreationDemo {
 

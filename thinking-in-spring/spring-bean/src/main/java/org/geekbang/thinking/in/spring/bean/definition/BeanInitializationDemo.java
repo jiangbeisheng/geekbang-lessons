@@ -27,7 +27,7 @@ import org.springframework.context.annotation.Lazy;
  * Bean 初始化 Demo
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
- * @since
+ * @since 2023年01月15日13:34:23
  */
 @Configuration // Configuration Class
 public class BeanInitializationDemo {
@@ -51,7 +51,7 @@ public class BeanInitializationDemo {
     }
 
     @Bean(initMethod = "initUserFactory", destroyMethod = "doDestroy")
-    @Lazy(value = false)
+    @Lazy(value = true)
     public UserFactory userFactory() {
         return new DefaultUserFactory();
     }
